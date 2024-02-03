@@ -15,8 +15,3 @@ Liguagens utilizadas:
 
  <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="24" height="24"/>  <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="24" height="24"/> <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="24" height="24"/> 
 
-#
-<div>
-<a href="https://github.com/donmarchiori/PI-PROZ">
-<img loading="lazy" height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=donmarchiori&layout=compact&langs_count=7&theme=dracula"/>
-</div>
