@@ -9,6 +9,7 @@
 - Igor Santos
 - Moisés Garcia
 - Matheus Alves
+- Arnaldo Jorge
 
 #
 Liguagens utilizadas:
