@@ -1,6 +1,6 @@
 # Projeto Integrador Proz:
 
-- O projeto visa criar um sistema de denuncias parecido "reclame aqui". Lá os usuarios poderão enviar uma denúncia de eventos relacionados ao tratamento de esgoto e supressão de arvores em areas próximas as nascentes. Onde as denuncias poderão ser enviadas para as prefeituras nos locais denunciados e a resposta será inserida no sistema para esclarecer a ação tomada.
+- O projeto visa criar um sistema de denúncias similar ao "Reclame Aqui". Nele, os usuários poderão enviar denúncias de eventos relacionados ao tratamento de esgoto e supressão de árvores em áreas próximas às nascentes. As denúncias serão encaminhadas às prefeituras locais e as respostas serão inseridas no sistema para esclarecer as ações tomadas.
 
 # Integrantes do grupo:
 
