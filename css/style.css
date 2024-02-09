@@ -1,0 +1,30 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.container_identidade{
+    background-color: #009EDB;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    height: 110px;
+}
+.logo img{
+    width: 78px;
+    height: 78px;
+    padding-top: 16px;
+    
+}
+.container_identidade .text_logo{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding-top: 16px;
+    padding-left: 8px;
+}
+.container_identidade .text_logo .titulo{
+    font-size: 20px;
+    font-weight: bold;
+}
+.container_identidade .text_logo .slogan{
+    font-size: 12px;
+}
