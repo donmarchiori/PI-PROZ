@@ -1,30 +1,110 @@
 body{
     font-family: 'Roboto', sans-serif;
 }
-.container_identidade{
+.container_header{
     background-color: #009EDB;
     width: 100%;
     display: flex;
-    justify-content: left;
+    justify-content: space-between;
+    align-items: center;
     height: 110px;
+
+}
+.container_identidade{
+    display: flex;
+    flex-direction: row;
 }
 .logo img{
     width: 78px;
     height: 78px;
     padding-top: 16px;
+    filter: drop-shadow(5px 2px 4px #0000003b);
     
 }
-.container_identidade .text_logo{
+.text_logo{
     display: flex;
     flex-direction: column;
     color: white;
     padding-top: 16px;
     padding-left: 8px;
 }
-.container_identidade .text_logo .titulo{
+.text_logo .titulo{
     font-size: 20px;
     font-weight: bold;
 }
-.container_identidade .text_logo .slogan{
+ .text_logo .slogan{
     font-size: 12px;
+}
+
+.container_btn_denuncia{
+    padding-right: 20px;
+}
+
+.container_btn_denuncia .btn_denunciar{
+    display: flex;
+    top: 0px;
+	left: 0px;
+	width: 108px;
+	height: 34px;
+	border-radius: 50px;
+	background-color:rgba(255,255,255,1);
+    color: #009EDB;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+	height: 35px;    
+}
+.nav .menu_nav{
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+	font-weight: bold;    
+}
+.nav .menu_nav .home{
+    padding: 2px 20px 10px 20px;
+    background-color: #009EDB;
+    color: white;
+    border-radius: 10px 10px 0px 0px;   
+}
+
+.nav .menu_nav .cadastrar{
+    padding: 0px 20px 0px 20px;
+    color: #009EDB;   
+}
+.nav .menu_nav .login{
+    padding: 0px 20px 0px 20px;
+    color: #009EDB;   
+}
+.linha_topo{
+    display: flex;
+    justify-content: center;
+}
+.linha_topo img{
+    top: 148px;
+    width: 98%;
+    height: 2px;
+    position: absolute;
+    display: block;
+    margin: 0px;
+    border: none;
+    padding: 0px;
+}
+
+a{
+    text-decoration: none; 
+}
+a:visited{
+    color: white; 
+}
+ul{
+    list-style: none;
 }
