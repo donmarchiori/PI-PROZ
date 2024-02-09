@@ -5,36 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CleanWater</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/resposta.css">
     <script src="js/main.js" defer></script>   
 </head>
 <body>
-    <header></header>
-    <main>
-        
-        <div class="link_main">
-            <a class="link_1" href="">ACESSAR DENÚNCIAS DA SUA REGIÃO</a><br>
-            <a class="link_1" href="">ACESSAR DENÚNCIAS RESPONDIDAS</a>
-        </div>
-        <hr class="barra_cor"> <br> 
-        <div class="detalhes_denuncias">
-            <h4 class="titulo_denuncia">Título da denuncia</h4>
-            <p class="informações_denuncia"> Corpo da denúncia
-                
-            </p>
-            <img class="imgem_1" src="./img/piabanha.jpg" alt="detalhe da imagem">
-        </div>
-        <hr class="barra_cor"> 
-        <form class="form_format" id="formulario" autocomplete="off">
-                         
-              <label class="container_label_color">TÍTULO:</label><br><textarea  cols="100"></textarea><br>              
-              <label class="container_label_color">RESPOSTA:</label><br><textarea  cols="100" rows="15" ></textarea><br>
-              <input class="btn_submit" type="submit" value="Responder">
-            
-          </form>
-        
+    
+    <div class="container_main">
+        <div class="header_links">
+            <a href="#">ACESSAR DENÚNCIAS DA SUA REGIÃO</a><br><br>
+            <a href="#">ACESSAR DENÚNCIAS RESPONDIDAS</a><br>
+            <hr class="hr">
+        </div><!--Fim header links-->
 
-    </main>
-    <footer></footer>    
+        <section class="medium_part">
+            <div class="text">
+                <h3>Denúncia: Esgoto a céu aberto no rio Piabanha</h3>
+                <p>                               
+                    Petrópolis - RJ / 22/01/2024 <br>
+                    Usuário: Yuri Marchiori <br><br>
+                    
+                    Descrição da Denúncia:<br><br>
+                    
+                    É com preocupação que denunciamos a presença alarmante de esgoto a céu 
+                    aberto no rio Piabanha,em Petrópolis. Esta situação, que se estende por um trecho considerável do rio, representa 
+                    uma ameaça significativa ao meio ambiente e à saúde pública.
+                </p>
+            </div>
+            <div class="imagem">
+                <img src="img/piabanha.jpg" alt="imagem rio Piabanha poluído">
+            </div>
+            
+
+
+        </section><!--Fim medium part-->
+
+        <hr class="hr">
+        
+        <div class="final_part">
+            
+
+            <form class="formulario" action="#">
+                <label for="texto">TÍTULO</label><br>
+                <input id="texto" type="text"><br>
+
+                <label for="texto">RESPOSTA</label><br>
+                <input id="texto" type="text"><br>
+
+                <input type="submit" value="RESPONDER">
+
+            </form>
+
+        </div>
+
+
+    </div>
+    
+     
 </body>
 </html>
