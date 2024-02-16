@@ -15,7 +15,7 @@
 .header_links{
    height: 130px; 
    width: 100%; 
-   margin: 20px 0;
+   margin: 20px ;
    
 
 
@@ -24,7 +24,7 @@
 .header_links a {
    text-decoration: none;
    color: #009EDB;
-   margin: 0 30px ;
+   margin: 0 180px ;
 
 }
 
@@ -73,7 +73,7 @@
 }
 
 .imagem {
-   height: 250px;
+   height: 450px;
    width: 40%;
 
 }
@@ -82,20 +82,40 @@
 .imagem img {
    height: 450px;
    width: 100%;
+   border-radius: 50px
 
 }
+
+.imagem
 
 .final_part {
    display: flex;
    align-items: center;
-   justify-content: space-between;
+   justify-content: start;
    flex-direction: column;
+   width: 100%;
+   padding: 0 0;
+   margin:150px 50px;
+   box-sizing: border-box;
+   
 
 }
 
-.formulario{
-   display: flex;
-   align-items: flex-start;
-   justify-content: space-around;
-   flex-direction: column;
+.text_1 {
+   text-align: justify;
+   color: #B4B4B4;
+   font-family: 'Roboto', sans-serif;    
+   text-decoration: none;
+
+}
+
+.botton {
+   border-radius: 50px;
+   background-color: #009EDB;
+   height: 30px;
+   width: 20%;
+   font-size: 15px;
+   color: #FAFEFF;
+   font-family: 'Roboto', sans-serif; 
+
 }
