@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root{
+    --font-roboto: 'Roboto', sans-serif;
+    --color-main: #009EDB;
+    --color-sec: #55B6DB;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow: hidden;
+}
+
+.container{
+    height: 470px;
+    max-width: 1000px;
+    margin: 100px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.178);
+}
+
+
+.login,
+.cadastro{
+    height: 440px;
+    min-width: 48%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #F2F2F2;
+    margin: 5px;
+    box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.212);
+    border-radius: 10px 10px 0px 0px;
+}
+
+.login p{
+    color: #5B5B5B;
+}
+
+.header-login,
+.header-cadastro{
+    height: 97px;
+    width: 100%;
+    background-color: var(--color-sec);
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.header-login h2,
+.header-cadastro h2{
+    margin-top: 30px;
+    color: #fff;
+    font-family: var(--font-roboto);
+    font-weight: 400;
+    font-size: 2.5em;
+}
+
+.hr{
+    width: 100%;
+    background-color: var(--color-main);
+    padding: 1px;
+    border: none;
+}
+
+.form-cadastro,
+.form-login{
+    height: 250px;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.form-cadastro{
+    height: 310px !important;
+}
+
+
+.form-login input,
+.form-cadastro input{
+    max-width: 200px;
+    margin-bottom: 15px;
+    padding: 8px;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0px 2px 3px 2px rgba(0, 0, 0, 0.233);
+    outline-color: #009EDB;
+}
+
+.form-login input{
+    margin-bottom: 15px !important;
+}
+
+
+input[type=submit] {
+    padding:8px 30px; 
+    background-color: var(--color-main);
+    border:0 none;
+    cursor:pointer;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.644);
+    display: block;
+    margin: 20px auto;
+
+    font-family: var(--font-roboto);
+    font-weight: 500;
+    color: #ffff;
+}
+
+.form-login span label, 
+input[type=checkbox]{
+
+    cursor: pointer;
+    margin: 0px 0px 30px 5px;
+    box-shadow: none !important; 
+}
+
+.form-login a{
+    text-decoration: none;
+    color: #017aaa;
+    font-family: var(--font-roboto);
+    font-size: 0.9em;
+    font-weight: 400;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.form-login a:hover{
+    color: #0b6b91;
+    text-decoration: underline;
+}
+
+
