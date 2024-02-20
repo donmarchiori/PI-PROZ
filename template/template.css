@@ -199,60 +199,8 @@ a{
 .ud_titulo a:visited{
     color: #009EDB; 
 }
-main{
-    display: flex;
-    flex-direction: column;
-    margin-left: 320px;
-    background-color: white;
-}
-h1{
-    color: #009EDB;
-    padding: 10px;
-}
-.grid_respostas{
-    display: grid;
-    grid-gap:30px;
-    grid-template-columns: repeat(auto-fit, 235px);
-    justify-content: center;
-    justify-items: center;
-    padding: 30px 30px  180px 30px ;
-  
-}
-.card_resposta{
-    top: 57px;
-    left: 73px;
-    width: 235px;
-    height: 267px;
-    top: 0px;
-	left: 0px;
-	width: 235px;
-	height: 267px;
-	border-radius: 5px;
-	background:rgba(245,245,245,1);
-}
-.card_resposta img{
-    width: 235px;
-    height: 101px;
-    border-radius: 5px 5px 0px 0px;
-}
-.intro_resposta{
-    color: #009EDB;
-    font-size: 16px;
-    padding-top: 10px;
-    padding: 5px;
-}
-.intro_resposta p{
-    color: #B4B4B4;
-    font-size: 10px;
-}
 
-.titulo_resposta{
-    color: #009EDB;
-    font-size: 14px;
-    padding-left: 10px;
-    font-weight: bold;
-    padding: 5px;
-}
+
 .linha_base img{
     width: 100%;
     height: 1.2px;
@@ -293,6 +241,7 @@ footer a img{
 .contato{
     font-size: 14px;
     font-weight: bold;
+    min-width: 320px;
 }
 .contato h3{
     font-size: 24px;
@@ -311,4 +260,32 @@ hr{
     border: none;
     background-color: #009EDB;
     padding: 0.8px;
+}
+
+
+
+ /*css para parte do conteudo */
+main{
+    display: flex;
+    flex-direction: column;
+    margin-left: 320px;
+    background-color: white;
+    min-height: 560px;
+}
+h1{
+    color: #009EDB;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    footer {
+        display: flex;
+        flex-direction: column; /* Quando a largura da tela for menor que 600px, mudamos para uma disposição em coluna */
+    }
+    .sidebar_container{
+        display: none;
+    }
+    main{
+        margin-left:0px
+    }
 }
