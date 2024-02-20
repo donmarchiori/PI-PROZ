@@ -171,8 +171,6 @@ ul{
 .ud_titulo a:visited{
     color: #009EDB; 
 }
-
-
 main{
     display: flex;
     flex-direction: column;
