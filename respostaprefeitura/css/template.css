@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #F5F5F5;
+}
+.conteudo{
+    display: grid;
+    grid-template-rows: auto 1fr auto; /* Define a estrutura das linhas */
+    min-height: 100vh;
+}
+.container_header{
+    background-color: #009EDB;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 110px;
+
+}
+.container_identidade{
+    display: flex;
+    flex-direction: row;
+}
+.logo img{
+    width: 78px;
+    height: 78px;
+    padding-top: 16px;
+    filter: drop-shadow(5px 2px 4px #0000003b);
+    
+}
+.text_logo{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding-top: 16px;
+    padding-left: 8px;
+}
+.text_logo .titulo{
+    font-size: 20px;
+    font-weight: bold;
+}
+ .text_logo .slogan{
+    font-size: 12px;
+}
+
+.container_btn_denuncia{
+    padding-right: 20px;
+}
+
+.container_btn_denuncia .btn_denunciar{
+    display: flex;
+    top: 0px;
+	left: 0px;
+	width: 108px;
+	height: 34px;
+	border-radius: 50px;
+	background-color:rgba(255,255,255,1);
+    color: #009EDB;
+    font-size: 14px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
+.container_btn_denuncia .btn_denunciar:hover{
+    font-size: 16px;
+    cursor: pointer;
+
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+	height: 35px;   
+    background-color: white; 
+}
+.nav .menu_nav{
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+	font-weight: bold;    
+}
+.nav .menu_nav .home{
+    padding: 2px 20px 10px 20px;
+    background-color: #009EDB;
+    color: white;
+    border-radius: 10px 10px 0px 0px;   
+}
+
+.nav .menu_nav .cadastrar{
+    padding: 2px 20px 0px 20px;
+    color: #009EDB;   
+}
+.nav .menu_nav .login{
+    padding: 2px 20px 0px 20px;
+    color: #009EDB;   
+}
+.linha_topo{
+    display: flex;
+    justify-content: center;
+}
+.linha_topo img{
+    top: 141px;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    display: block;
+    margin: 0px;
+    border: none;
+    padding: 0px;
+}
+
+ul{
+    list-style: none;
+}
+.menu_nav a {
+    text-decoration: none; 
+}
+.home a{
+    color: white; 
+}
+.home a:visited{
+    color: white; 
+}
+ a:visited{
+    color:#009EDB; 
+}
+
+a{
+    color:#009EDB; 
+}
+
+.sidebar_container{
+    top: 142px;
+    width: auto;
+    height:auto;
+    position: absolute;
+    background-color: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+.sidebar_container .sidebar_title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.sidebar_title img{
+    width: 47px;
+    color: #B4B4B4;
+    padding-top:45px;
+}
+
+.sidebar_container .sidebar_text_title{
+    font-size: 16px;
+    font-weight: bold;
+    color: #B4B4B4;
+    margin-top: 60px;
+    padding: 2px;
+}
+
+.ultimas_denuncias{
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    max-width: 242px;
+    padding: 10px 10px 10px 10px;
+    
+}
+
+.ultimas_denuncias .ud_titulo{
+    color: #009EDB;
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.ultimas_denuncias .ud_local_data{
+    color: #B4B4B4;
+    font-size: 12px;
+    font-weight: bold;
+
+}
+
+.ultimas_denuncias .ud_local_data .pipe{
+    color: #009EDB;
+    font-size: 12px;
+    font-weight: bold;
+}
+.ud_titulo a:visited{
+    color: #009EDB; 
+}
+
+
+.linha_base img{
+    width: 100%;
+    height: 1.2px;
+    position: absolute;
+    display: block;
+    margin-bottom: 0px;
+    border: none;
+    padding: 0px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    color: #009EDB;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: white;
+
+    
+}
+
+footer a{
+    display: flex;
+    align-items: center;
+    color: #009EDB;
+}
+
+footer a img{
+    width: 35px !important;
+    height: 30px !important;
+}
+
+.contato{
+    width: 30%;
+    padding: 30px;
+}
+.contato{
+    font-size: 14px;
+    font-weight: bold;
+    min-width: 320px;
+}
+.contato h3{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.info{
+    background-color: #F5F5F5;
+    padding: 30px;
+}
+.info p{
+    font-size: 12px;
+}
+
+hr{
+    border: none;
+    background-color: #009EDB;
+    padding: 0.8px;
+}
+
+
+
+ /*css para parte do conteudo */
+main{
+    display: flex;
+    flex-direction: column;
+    margin-left: 320px;
+    background-color: white;
+    min-height: 560px;
+}
+h1{
+    color: #009EDB;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    footer {
+        display: flex;
+        flex-direction: column; /* Quando a largura da tela for menor que 600px, mudamos para uma disposição em coluna */
+    }
+    .sidebar_container{
+        display: none;
+    }
+    main{
+        margin-left:0px
+    }
+}
