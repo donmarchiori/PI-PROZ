@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon_io/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="img/favicon_io/android-chrome-512x512.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_io/favicon-16x16.png">
+    <link rel="shortcut icon" href="img/favicon_io/favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="img/favicon_io/site.webmanifest">
+
+    <link rel="stylesheet" href="css/telaLogin.css">
+</head>
+<body>
+
+    <section class="container">
+        <div class="login"> 
+            
+                <div class="header-login">
+                    <h2>Login</h2>
+                    <hr class="hr">
+                </div>
+
+                <p>Faça login com sua conta Clean Water</p>
+                
+                <div class="form-login">
+                    <form action="#">
+                        <input type="email" name="email-login" id="email-login" placeholder="E-mail"><br>
+
+                        <input type="password" name="senha-login" id="senha-login" placeholder="Senha"><br>
+                        
+                        <span>
+                            <input type="checkbox" name="remember" id="remember">
+                            <label for="remember">Lembre-me</label><br>
+                        </span>
+
+                        <input type="submit" value="Entrar">
+                    </form>
+
+                    <a href="#">Esqueci minha senha</a>
+                </div>
+
+        </div> <!--fim login-->
+
+        <div class="cadastro">
+            <div class="header-cadastro">
+                <h2>Cadastro</h2>
+                <hr class="hr">
+            </div>
+
+            <div class="form-cadastro">
+                <form action="#">
+                    <input type="text" id="nome" placeholder="Nome" required ><br>
+
+                    <input type="email" name="email-cadastro" id="email-cadastro" placeholder="E-mail" required><br>
+
+                    <input type="password" name="senha-cadastro" id="senha-cadastro" placeholder="Senha" minlength="6" required><br>
+
+                    <input type="password" name="confirme-senha" id="confirme-senha" placeholder="Confirme senha" minlength="6" required><br>
+
+                    <input type="submit" value="Cadastrar">
+                    
+                </form>
+            </div>
+        </div> <!--fim cadastro-->
+
+        
+    </section>
+
+</body>
+</html>
