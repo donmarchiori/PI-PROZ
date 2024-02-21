@@ -1,9 +1,21 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../css/cadastrodenuncia.css">
+    <link rel="stylesheet" type="text/css" href="../template/template.css">
+
+    <link rel="icon" type="image/png" sizes="192x192" href="../assets/../assets/img/favicon_io/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="../assets/../assets/img/favicon_io/android-chrome-512x512.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon_io/favicon-16x16.png">
+    <link rel="shortcut icon" href="../assets/img/favicon_io/favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="../assets/img/favicon_io/site.webmanifest">
+
+    <link rel="stylesheet" href="../css/telaLogin.css">
+
+
     <title>Water Clean</title>
     <!-- get the required files from 3rd party sources -->
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
@@ -29,6 +41,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="nav" >
                 <ul class="menu_nav">
                     <li class="home" >
@@ -85,72 +98,59 @@
                 </div>
                 </div>
             </aside>
-            
-            <main>
-                <br>
-                <h5>Formulário de Cadastro de Denúncia</h5>
-                <br>
-                <h5>Onde aconteceu?</h5>
-                <h6>Conte-nos onde aconteceu o fato que deseja relatar</h6>
-                <br>
-
-                <form method="post"> 
-                    <label class="text_1" for="estado">Estado *</label><br>
-                    <select id="estado" name="estado" class="input">
-                        <option disabled selected>Selecione o estado</option>
-                        <option value="AC">Acre</option>
-                        <option value="AL">Alagoas</option>
-                        <option value="AP">Amapá</option>
-                        <option value="AM">Amazonas</option>
-                        <option value="BA">Bahia</option>
-                        <option value="CE">Ceará</option>
-                        <option value="DF">Distrito Federal</option>
-                        <option value="ES">Espírito Santo</option>
-                        <option value="GO">Goiás</option>
-                        <option value="MA">Maranhão</option>
-                        <option value="MT">Mato Grosso</option>
-                        <option value="MS">Mato Grosso do Sul</option>
-                        <option value="MG">Minas Gerais</option>
-                        <option value="PA">Pará</option>
-                        <option value="PB">Paraíba</option>
-                        <option value="PR">Paraná</option>
-                        <option value="PE">Pernambuco</option>
-                        <option value="PI">Piauí</option>
-                        <option value="RJ">Rio de Janeiro</option>
-                        <option value="RN">Rio Grande do Norte</option>
-                        <option value="RS">Rio Grande do Sul</option>
-                        <option value="RO">Rondônia</option>
-                        <option value="RR">Roraima</option>
-                        <option value="SC">Santa Catarina</option>
-                        <option value="SP">São Paulo</option>
-                        <option value="SE">Sergipe</option>
-                        <option value="TO">Tocantins</option>
-                        <option value="EX">Estrangeiro</option>
-                    </select>
-                    <br> <br>
-                    <label class="text_1" for="cidade">Cidade *</label><br>
-                    <input type="text" id="cidade" name="cidade" placeholder="Informe sua cidade" required class="input">
-                    <br> <br>
-                    <label class="text_1" for="bairro">Bairro *</label><br>
-                    <input type="text" id="bairro" name="bairro" placeholder="Informe seu bairro" required class="input">
-                    <br> <br>
-                    <label class="text_1" for="logradouro">Logradouro *</label><br>
-                    <input type="text" id="logradouro" name="logradouro" placeholder="Informe seu logradouro" required class="input">
-                    <br> <br>
-
-                    <h5>O que aconteceu?</h5>
-                    <h6>Relate aqui o fato que você deseja narrar</h6>
-                    <textarea rows="10" cols="40" maxlength="2000" style="resize: none;" class="input"></textarea>
-                    <br><br>
-
-                    <h5>Anexe aqui arquivo(s) relacionado(s) ao fato</h5>
-                    <input type="file" id="myFile" / class="input">
-                    <br><br>
-
-                    <input type="submit" value="Enviar" class="input">
-                    <br> <br>
-                </form>
-            </main>
+            <section class="container">
+                <div class="container-login"> 
+                    
+                        <div class="header-login">
+                            <h2>Login</h2>
+                            <hr class="hr">
+                        </div>
+        
+                        <p>Faça login com sua conta Clean Water</p>
+                        
+                        <div class="form-login">
+                            <form action="#">
+                                <input type="email" name="email-login" id="email-login" placeholder="E-mail"><br>
+        
+                                <input type="password" name="senha-login" id="senha-login" placeholder="Senha"><br>
+                                
+                                <span>
+                                    <input type="checkbox" name="remember" id="remember">
+                                    <label for="remember">Lembre-me</label><br>
+                                </span>
+        
+                                <input type="submit" value="Entrar">
+                            </form>
+        
+                            <a href="#">Esqueci minha senha</a>
+                        </div>
+        
+                </div> <!--fim login-->
+        
+                <div class="cadastro">
+                    <div class="header-cadastro">
+                        <h2>Cadastro</h2>
+                        <hr class="hr">
+                    </div>
+        
+                    <div class="form-cadastro">
+                        <form action="#">
+                            <input type="text" id="nome" placeholder="Nome" required ><br>
+        
+                            <input type="email" name="email-cadastro" id="email-cadastro" placeholder="E-mail" required><br>
+        
+                            <input type="password" name="senha-cadastro" id="senha-cadastro" placeholder="Senha" minlength="6" required><br>
+        
+                            <input type="password" name="confirme-senha" id="confirme-senha" placeholder="Confirme senha" minlength="6" required><br>
+        
+                            <input type="submit" value="Cadastrar">
+                            
+                        </form>
+                    </div>
+                </div> <!--fim cadastro-->
+        
+                
+            </section>
 
         </div>
         <footer>
