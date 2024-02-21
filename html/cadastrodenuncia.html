@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/cadastrodenuncia.css">
+    <title>Water Clean</title>
+    <!-- get the required files from 3rd party sources -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+     <!-- use the font -->
+</head>
+<body>
+    <div class="conteudo">
+        <header>
+            <div class="container_header">
+                <div class="container_identidade">
+                    <div class="logo">
+                        <img src="../assets/img/logo.png" />
+                    </div>
+                    <div class="text_logo">
+                        <span class="titulo">CLEAN WATER</span>
+                        <span class="slogan">Água limpa para todos</span>
+                    </div>
+                </div>
+
+                <div class="container_btn_denuncia">
+                    <div class="btn_denunciar">
+                        DENUNCIAR
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav" >
+                <ul class="menu_nav">
+                    <li class="home" >
+                        <a href="./home.html">HOME</a>
+                    </li>
+                    <li class="cadastrar" >
+                    <a href="./cadastrodenuncia.html">CADASTRAR</a> 
+                    </li>
+                    <li class="login" >
+                        <a href="#">LOGIN</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="linha_topo">
+                <img src="../assets/img/linha_topo.png"/>
+            </div>
+        </header>
+        <div class="container_principal">
+            <aside class="sidebar_container">
+                <div class="sidebar_title">
+                    <img src="../assets/img/megafone.png" alt="Megafone">
+                    <div class="sidebar_text_title">Últimas notícias</div>
+                </div>
+                <div class="ultimas_denuncias">
+                <div class="ud_titulo">
+                    <a href="#">
+                        Esgoto clandestino despejado no rio Tiete
+                    </a>
+                </div>
+                <div class="ud_local_data"> São Paulo SP 
+                    <span class="pipe"> | </span>
+                    01/02/2024
+                </div>
+                <div class="ud_titulo">
+                    <a href="#">
+                        Esgoto sendo descartado no rio Paraíba do Sul
+                    </a>
+                </div>
+                <div class="ud_local_data"> São José dos Campos SP
+                    <span class="pipe"> | </span>
+                    22/01/2024
+                </div>
+                <div class="ud_titulo">
+                    <a href="#">
+                    Supressão arbórea em área de nascente
+                    </a>
+                </div>
+                <div class="ud_local_data"> São Paulo SP 
+                    <span class="pipe"> | </span>
+                    30/01/2024
+                </div>
+                </div>
+            </aside>
+            
+            <main>
+                <br>
+                <h5>Formulário de Cadastro de Denúncia</h5>
+                <br>
+                <h5>Onde aconteceu?</h5>
+                <h6>Conte-nos onde aconteceu o fato que deseja relatar</h6>
+                <br>
+
+                <form method="post"> 
+                    <label class="text_1" for="estado">Estado *</label><br>
+                    <select id="estado" name="estado" class="input">
+                        <option disabled selected>Selecione o estado</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                        <option value="EX">Estrangeiro</option>
+                    </select>
+                    <br> <br>
+                    <label class="text_1" for="cidade">Cidade *</label><br>
+                    <input type="text" id="cidade" name="cidade" placeholder="Informe sua cidade" required class="input">
+                    <br> <br>
+                    <label class="text_1" for="bairro">Bairro *</label><br>
+                    <input type="text" id="bairro" name="bairro" placeholder="Informe seu bairro" required class="input">
+                    <br> <br>
+                    <label class="text_1" for="logradouro">Logradouro *</label><br>
+                    <input type="text" id="logradouro" name="logradouro" placeholder="Informe seu logradouro" required class="input">
+                    <br> <br>
+
+                    <h5>O que aconteceu?</h5>
+                    <h6>Relate aqui o fato que você deseja narrar</h6>
+                    <textarea rows="10" cols="40" maxlength="2000" style="resize: none;" class="input"></textarea>
+                    <br><br>
+
+                    <h5>Anexe aqui arquivo(s) relacionado(s) ao fato</h5>
+                    <input type="file" id="myFile" / class="input">
+                    <br><br>
+
+                    <input type="submit" value="Enviar" class="input">
+                    <br> <br>
+                </form>
+            </main>
+
+        </div>
+        <footer>
+            <div class="linha_base">
+                <img src="../assets/img/linha_topo.png"/>
+            </div>
+            <div class="contato">
+                <h3>Clean Water Brasil</h3>
+                Quadra 802, Conjunto C, Lote 17CEP: 70800-400 - Brasília, DF, Brasil+55 (61) 3038-9300
+            </div>
+            <hr>
+            <div class="info">
+                <a href="#"><h3>Sobre</h3><img src="../assets/img/direito.png" alt="proximo"></a>
+                <p>Descubra o que Clean Water está fazendo para alcançar os Objetivos de água limpa para todos.</p>
+            </div>
+            <div class="info">
+                <a href="#"><h3>Faça a sua parte</h3><img src="../assets/img/direito.png" alt="proximo"></a>
+                <p>Vamos agir em prol dos Objetivos de Desenvolvimento Sustentável.</p>
+            </div>
+            <div class="info">
+                <a href="#"><h3>Recursos</h3><img src="../assets/img/direito.png" alt="proximo"></a>
+                <p>Saiba mais sobre nosso trabalho para alcançar os Objetivos de Desenvolvimento Sustentável.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
