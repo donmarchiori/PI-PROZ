@@ -13,7 +13,7 @@
 .container{
     height: 470px;
     max-width: 1000px;
-    margin: 100px auto;
+    margin: 100px 320px;
     display: flex;
     align-items: center;
     justify-content: center;
