@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../css/cadastrodenuncia.css">
+    <link rel="stylesheet" type="text/css" href="../css/home.css">
+    <link rel="stylesheet" type="text/css" href="../template/template.css">
+    <link rel="stylesheet" type="text/css" href="../css/cadastro_denuncia.css">
 
     <link rel="icon" type="image/png" sizes="192x192" href="../assets/../assets/img/favicon_io/android-chrome-192x192.png">
     <link rel="icon" type="image/png" sizes="512x512" href="../assets/../assets/img/favicon_io/android-chrome-512x512.png">
@@ -13,9 +15,7 @@
     <link rel="shortcut icon" href="../assets/img/favicon_io/favicon.ico" type="image/x-icon">
     <link rel="manifest" href="../assets/img/favicon_io/site.webmanifest">
     <title>Water Clean</title>
-    <!-- get the required files from 3rd party sources -->
-    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-     <!-- use the font -->
+
 </head>
 <body>
     <div class="conteudo">
@@ -33,10 +33,11 @@
 
                 <div class="container_btn_denuncia">
                     <div class="btn_denunciar">
-                        <a href="./cadastrodenuncia.html">DENUNCIAR</a>
+                        <a href="./cadastro_denuncia.html">DENUNCIAR</a>
                     </div>
                 </div>
             </div>
+
             <div class="nav" >
                 <ul class="menu_nav">
                     <li class="home" >
@@ -93,71 +94,80 @@
                 </div>
                 </div>
             </aside>
-            
             <main>
-                <br>
-                <h5>Formulário de Cadastro de Denúncia</h5>
-                <br>
-                <h5>Onde aconteceu?</h5>
-                <h6>Conte-nos onde aconteceu o fato que deseja relatar</h6>
-                <br>
+                <div class="input-group">
+                    <div class="input-box">
+                        <h4>Formulário para Cadastro de Denúncia</h4>
+                    </div>
+                    <form action="#"> 
+                        <div class ="input-box">
+                            <h5>Onde aconteceu?</h5>
+                            <h6>Conte-nos onde aconteceu o fato que deseja relatar.</h6>
+                            <br>
+                            <label for="estado">Estado *</label><br>
+                            <select class="input" id="estado" name="estado">
+                                <option value="" hidden>Selecione o Estado</option>
+                                <option value="AC">Acre</option>
+                                <option value="AL">Alagoas</option>
+                                <option value="AP">Amapá</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="BA">Bahia</option>
+                                <option value="CE">Ceará</option>
+                                <option value="DF">Distrito Federal</option>
+                                <option value="ES">Espírito Santo</option>
+                                <option value="GO">Goiás</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="PA">Pará</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="PR">Paraná</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="PI">Piauí</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="RO">Rondônia</option>
+                                <option value="RR">Roraima</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="SE">Sergipe</option>
+                                <option value="TO">Tocantins</option>
+                                <option value="EX">Estrangeiro</option>
+                            </select>
+                        </div>
+            
+                        <div class ="input-box">
+                            <label for="city">Cidade *</label><br>
+                            <input class="input" id="city" type="text" name="city" placeholder="Informe sua Cidade" required>
+                        </div>
+            
+                        <div class ="input-box">
+                            <label for="bairro">Bairro *</label><br>
+                            <input class="input" id="bairro" type="text" name="bairro" placeholder="Informe seu Bairro" required>
+                        </div>
+                        
+                        <div class ="input-box">
+                            <label for="tipo">Logradouro *</label><br>
+                            <input class="input" id="tipo" type="text" name="tipo" placeholder="Informe sua Rua" required>
+                        </div>
 
-                <form method="post"> 
-                    <label class="text_1" for="estado">Estado *</label><br>
-                    <select id="estado" name="estado" class="input">
-                        <option disabled selected>Selecione o estado</option>
-                        <option value="AC">Acre</option>
-                        <option value="AL">Alagoas</option>
-                        <option value="AP">Amapá</option>
-                        <option value="AM">Amazonas</option>
-                        <option value="BA">Bahia</option>
-                        <option value="CE">Ceará</option>
-                        <option value="DF">Distrito Federal</option>
-                        <option value="ES">Espírito Santo</option>
-                        <option value="GO">Goiás</option>
-                        <option value="MA">Maranhão</option>
-                        <option value="MT">Mato Grosso</option>
-                        <option value="MS">Mato Grosso do Sul</option>
-                        <option value="MG">Minas Gerais</option>
-                        <option value="PA">Pará</option>
-                        <option value="PB">Paraíba</option>
-                        <option value="PR">Paraná</option>
-                        <option value="PE">Pernambuco</option>
-                        <option value="PI">Piauí</option>
-                        <option value="RJ">Rio de Janeiro</option>
-                        <option value="RN">Rio Grande do Norte</option>
-                        <option value="RS">Rio Grande do Sul</option>
-                        <option value="RO">Rondônia</option>
-                        <option value="RR">Roraima</option>
-                        <option value="SC">Santa Catarina</option>
-                        <option value="SP">São Paulo</option>
-                        <option value="SE">Sergipe</option>
-                        <option value="TO">Tocantins</option>
-                        <option value="EX">Estrangeiro</option>
-                    </select>
-                    <br> <br>
-                    <label class="text_1" for="cidade">Cidade *</label><br>
-                    <input type="text" id="cidade" name="cidade" placeholder="Informe sua cidade" required class="input">
-                    <br> <br>
-                    <label class="text_1" for="bairro">Bairro *</label><br>
-                    <input type="text" id="bairro" name="bairro" placeholder="Informe seu bairro" required class="input">
-                    <br> <br>
-                    <label class="text_1" for="logradouro">Logradouro *</label><br>
-                    <input type="text" id="logradouro" name="logradouro" placeholder="Informe seu logradouro" required class="input">
-                    <br> <br>
+                        <div class="input-box">
+                            <h5>O que aconteceu?</h5>
+                            <h6>Relate aqui o fato que você deseja narrar.</h6>
+                            <textarea class="input" rows="10" cols="31" maxlength="2000" style="resize: none;"></textarea>
+                        </div>
 
-                    <h5>O que aconteceu?</h5>
-                    <h6>Relate aqui o fato que você deseja narrar</h6>
-                    <textarea rows="10" cols="40" maxlength="2000" style="resize: none;" class="input"></textarea>
-                    <br><br>
-
-                    <h5>Anexe aqui arquivo(s) relacionado(s) ao fato</h5>
-                    <input type="file" id="myFile" / class="input">
-                    <br><br>
-
-                    <input class="botton" type="submit" value="Enviar">
-                    <br> <br>
-                </form>
+                        <div class="input-box">
+                            <h5>Anexe aqui arquivo(s) relacionado(s) ao fato:</h5>
+                            <input type="file" name="file" id="file">
+                        </div>                   
+                        
+                        <input type="submit" value="Enviar">
+                    
+                    </form>
+                </div>
             </main>
 
         </div>
