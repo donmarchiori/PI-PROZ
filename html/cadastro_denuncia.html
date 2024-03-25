@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/home.css">
+    <link rel="stylesheet" type="text/css" href="../template/template.css">
+    <link rel="stylesheet" type="text/css" href="cadastro_autarquia.css">
+
+    <link rel="icon" type="image/png" sizes="192x192" href="../assets/../assets/img/favicon_io/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="../assets/../assets/img/favicon_io/android-chrome-512x512.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon_io/favicon-16x16.png">
+    <link rel="shortcut icon" href="../assets/img/favicon_io/favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="../assets/img/favicon_io/site.webmanifest">
+    <title>Water Clean</title>
+
+</head>
+<body>
+    <div class="conteudo">
+        <header>
+            <div class="container_header">
+                <div class="container_identidade">
+                    <div class="logo">
+                        <img src="../assets/img/logo.png" />
+                    </div>
+                    <div class="text_logo">
+                        <span class="titulo">CLEAN WATER</span>
+                        <span class="slogan">Água limpa para todos</span>
+                    </div>
+                </div>
+
+                <div class="container_btn_denuncia">
+                    <div class="btn_denunciar">
+                        <a href="./cadastrodenuncia.html">DENUNCIAR</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav" >
+                <ul class="menu_nav">
+                    <li class="home" >
+                        <a href="./home.html">HOME</a>
+                    </li>
+                    <li class="cadastrar" >
+                    <a href="./respostaprefeitura.html">RESPOSTA</a> 
+                    </li>
+                    <li class="cadastro_autarquia" >
+                        <a href="./Cadastro_autarquia.html">AUTARQUIA</a>
+                    </li>
+                    <li class="login" >
+                        <a href="./telaLogin.html">LOGIN</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="linha_topo">
+                <img src="../assets/img/linha_topo.png"/>
+            </div>
+        </header>
+        <div class="container_principal">
+            <aside class="sidebar_container">
+                <div class="sidebar_title">
+                    <img src="../assets/img/megafone.png" alt="Megafone">
+                    <div class="sidebar_text_title">Últimas notícias</div>
+                </div>
+                <div class="ultimas_denuncias">
+                <div class="ud_titulo">
+                    <a href="#">
+                        Esgoto clandestino despejado no rio Tiete
+                    </a>
+                </div>
+                <div class="ud_local_data"> São Paulo SP 
+                    <span class="pipe"> | </span>
+                    01/02/2024
+                </div>
+                <div class="ud_titulo">
+                    <a href="#">
+                        Esgoto sendo descartado no rio Paraíba do Sul
+                    </a>
+                </div>
+                <div class="ud_local_data"> São José dos Campos SP
+                    <span class="pipe"> | </span>
+                    22/01/2024
+                </div>
+                <div class="ud_titulo">
+                    <a href="#">
+                    Supressão arbórea em área de nascente
+                    </a>
+                </div>
+                <div class="ud_local_data"> São Paulo SP 
+                    <span class="pipe"> | </span>
+                    30/01/2024
+                </div>
+                </div>
+            </aside>
+            <main>
+                <div class="input-group">
+
+                    <div class="input-box">
+                        <h4>Formulário para Cadastro de Autarquia</h4>
+                    </div>
+                    
+                   
+                <form action="#">
+
+                 
+        
+                    <div class ="input-box">
+                        <label for="estado">Estado *</label><br>
+                        <select id="estado" name="estado">
+                            <option value="" hidden>Selecione o Estado</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                            <option value="EX">Estrangeiro</option>
+                        </select>
+                    </div>
+        
+                    <div class ="input-box">
+                        <label for="city">Cidade *</label><br>
+                        <input id="city" type="text" name="city" placeholder="Informe sua Cidade" required>
+                    </div>
+        
+                    <div class ="input-box">
+                        <label for="bairro">Bairro *</label><br>
+                        <input id="bairro" type="text" name="bairro" placeholder="Informe seu Bairro" required>
+                    </div>
+
+                    
+                    <div class ="input-box">
+                        <label for="tipo">Logradouro *</label><br>
+                        <input id="tipo" type="text" name="tipo" placeholder="Informe sua Rua" required>
+                    </div>
+
+                  <div class="input-box">
+                    <h4>O que aconteceu ?</h4>
+                    <h5>Relate aqui o fato que você deseja narrar</h5>
+                    <textarea name="#" id="#" cols="30" rows="10"></textarea>
+                  </div>
+
+                  <div class="input-box">
+                    <label for="file">Anexe aqui arquivos(a) relacionados(s) ao fato</label><br>
+                    <input type="file" name="file" id="file">
+                  </div>
+
+                   
+                    
+                    <input type="submit" value="Enviar">
+                </form>
+
+                </div>
+            </main>
+
+        </div>
+        <footer>
+            <div class="linha_base">
+                <img src="../assets/img/linha_topo.png"/>
+            </div>
+            <div class="contato">
+                <h3>Clean Water Brasil</h3>
+                Quadra 802, Conjunto C, Lote 17CEP: 70800-400 - Brasília, DF, Brasil+55 (61) 3038-9300
+            </div>
+            <hr>
+            <div class="info">
+                <a href="#"><h3>Sobre</h3><img src="../assets/img/direito.png" alt="proximo"></a>
+                <p>Descubra o que Clean Water está fazendo para alcançar os Objetivos de água limpa para todos.</p>
+            </div>
+            <div class="info">
+                <a href="#"><h3>Faça a sua parte</h3><img src="../assets/img/direito.png" alt="proximo"></a>
+                <p>Vamos agir em prol dos Objetivos de Desenvolvimento Sustentável.</p>
+            </div>
+            <div class="info">
+                <a href="#"><h3>Recursos</h3><img src="../assets/img/direito.png" alt="proximo"></a>
+                <p>Saiba mais sobre nosso trabalho para alcançar os Objetivos de Desenvolvimento Sustentável.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
