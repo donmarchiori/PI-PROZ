@@ -96,83 +96,74 @@
             </aside>
             <main>
                 <div class="input-group">
-
                     <div class="input-box">
                         <h4>Formulário para Cadastro de Denúncia</h4>
                     </div>
+                    <form action="#"> 
+                        <div class ="input-box">
+                            <label for="estado">Estado *</label><br>
+                            <select id="estado" name="estado">
+                                <option value="" hidden>Selecione o Estado</option>
+                                <option value="AC">Acre</option>
+                                <option value="AL">Alagoas</option>
+                                <option value="AP">Amapá</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="BA">Bahia</option>
+                                <option value="CE">Ceará</option>
+                                <option value="DF">Distrito Federal</option>
+                                <option value="ES">Espírito Santo</option>
+                                <option value="GO">Goiás</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="PA">Pará</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="PR">Paraná</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="PI">Piauí</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="RO">Rondônia</option>
+                                <option value="RR">Roraima</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="SE">Sergipe</option>
+                                <option value="TO">Tocantins</option>
+                                <option value="EX">Estrangeiro</option>
+                            </select>
+                        </div>
+            
+                        <div class ="input-box">
+                            <label for="city">Cidade *</label><br>
+                            <input id="city" type="text" name="city" placeholder="Informe sua Cidade" required>
+                        </div>
+            
+                        <div class ="input-box">
+                            <label for="bairro">Bairro *</label><br>
+                            <input id="bairro" type="text" name="bairro" placeholder="Informe seu Bairro" required>
+                        </div>
+                        
+                        <div class ="input-box">
+                            <label for="tipo">Logradouro *</label><br>
+                            <input id="tipo" type="text" name="tipo" placeholder="Informe sua Rua" required>
+                        </div>
+
+                        <div class="input-box">
+                            <h4>O que aconteceu ?</h4>
+                            <h5>Relate aqui o fato que você deseja narrar</h5>
+                            <textarea name="#" id="#" cols="30" rows="10"></textarea>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="file">Anexe aqui arquivos(a) relacionados(s) ao fato</label><br>
+                            <input type="file" name="file" id="file">
+                        </div>                   
+                        
+                        <input type="submit" value="Enviar">
                     
-                   
-                <form action="#">
-
-                 
-        
-                    <div class ="input-box">
-                        <label for="estado">Estado *</label><br>
-                        <select id="estado" name="estado">
-                            <option value="" hidden>Selecione o Estado</option>
-                            <option value="AC">Acre</option>
-                            <option value="AL">Alagoas</option>
-                            <option value="AP">Amapá</option>
-                            <option value="AM">Amazonas</option>
-                            <option value="BA">Bahia</option>
-                            <option value="CE">Ceará</option>
-                            <option value="DF">Distrito Federal</option>
-                            <option value="ES">Espírito Santo</option>
-                            <option value="GO">Goiás</option>
-                            <option value="MA">Maranhão</option>
-                            <option value="MT">Mato Grosso</option>
-                            <option value="MS">Mato Grosso do Sul</option>
-                            <option value="MG">Minas Gerais</option>
-                            <option value="PA">Pará</option>
-                            <option value="PB">Paraíba</option>
-                            <option value="PR">Paraná</option>
-                            <option value="PE">Pernambuco</option>
-                            <option value="PI">Piauí</option>
-                            <option value="RJ">Rio de Janeiro</option>
-                            <option value="RN">Rio Grande do Norte</option>
-                            <option value="RS">Rio Grande do Sul</option>
-                            <option value="RO">Rondônia</option>
-                            <option value="RR">Roraima</option>
-                            <option value="SC">Santa Catarina</option>
-                            <option value="SP">São Paulo</option>
-                            <option value="SE">Sergipe</option>
-                            <option value="TO">Tocantins</option>
-                            <option value="EX">Estrangeiro</option>
-                        </select>
-                    </div>
-        
-                    <div class ="input-box">
-                        <label for="city">Cidade *</label><br>
-                        <input id="city" type="text" name="city" placeholder="Informe sua Cidade" required>
-                    </div>
-        
-                    <div class ="input-box">
-                        <label for="bairro">Bairro *</label><br>
-                        <input id="bairro" type="text" name="bairro" placeholder="Informe seu Bairro" required>
-                    </div>
-
-                    
-                    <div class ="input-box">
-                        <label for="tipo">Logradouro *</label><br>
-                        <input id="tipo" type="text" name="tipo" placeholder="Informe sua Rua" required>
-                    </div>
-
-                  <div class="input-box">
-                    <h4>O que aconteceu ?</h4>
-                    <h5>Relate aqui o fato que você deseja narrar</h5>
-                    <textarea name="#" id="#" cols="30" rows="10"></textarea>
-                  </div>
-
-                  <div class="input-box">
-                    <label for="file">Anexe aqui arquivos(a) relacionados(s) ao fato</label><br>
-                    <input type="file" name="file" id="file">
-                  </div>
-
-                   
-                    
-                    <input type="submit" value="Enviar">
-                </form>
-
+                    </form>
                 </div>
             </main>
 
