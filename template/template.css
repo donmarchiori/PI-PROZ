@@ -89,21 +89,28 @@ body{
     font-size: 14px;
 	font-weight: bold;    
 }
-.nav .menu_nav .home{
+.nav .menu_nav #selecionado{
     padding: 2px 20px 10px 20px;
     background-color: #009EDB;
     color: white;
     border-radius: 10px 10px 0px 0px;   
 }
 
-.nav .menu_nav .cadastrar{
-    padding: 0px 20px 0px 20px;
-    color: #009EDB;   
+
+.nav .menu_nav>li{
+    padding: 2px 20px 10px 20px;
+    background-color: #ffffff;
+    border-radius: 10px 10px 0px 0px;   
 }
-.nav .menu_nav .login{
-    padding: 0px 20px 0px 20px;
-    color: #009EDB;   
+
+.nav .menu_nav>li:hover{
+    padding: 2px 20px 10px 20px;
+    background-color: #009ddb41;
+    color: white;
+    border-radius: 10px 10px 0px 0px;   
 }
+
+
 .linha_topo{
     display: flex;
     justify-content: center;
@@ -125,10 +132,10 @@ ul{
 .menu_nav a {
     text-decoration: none; 
 }
-.home a{
+#selecionado a{
     color: white; 
 }
-.home a:visited{
+#selecionado a:visited{
     color: white; 
 }
  a:visited{

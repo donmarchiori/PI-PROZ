@@ -57,7 +57,8 @@ h1{
     font-size: 14px;
     padding-left: 10px;
     font-weight: bold;
-    padding: 5px;
+    padding: 10px;
+    text-align: justify;
 }
 
 .linha_base img{

@@ -1,0 +1,51 @@
+{
+    "lastNews": [
+        {
+            "titulo": "Esgoto clandestino despejado no rio Tiete",
+            "local": "São Paulo SP",
+            "data": "01/02/2024"
+        },
+        {
+            "titulo": "Falta de agua em SP",
+            "local": "Jacarei SP",
+            "data": "31/02/2024"
+        },
+        {
+            "titulo": "Esgoto sendo descartado no rio Paraíba do Sul",
+            "local": "São José dos Campos SP",
+            "data": "22/01/2024"
+        },
+        {
+            "titulo": "Supressão arbórea em área de nascente",
+            "local": "Taubaté SP",
+            "data": "30/01/2024"
+        }
+    ],
+    "newsHome": [
+        {
+            "image": "../assets/fotos/supressao_arborea.jpg",
+            "dataResolucao": "01 de Janeiro 2024",
+            "resposta": "Prefeitura Municipal suspende obra que desrespeitou limite mínimo de construção próximo à nascente."
+        },
+        {
+            "image": "../assets/fotos/esgoto.jpg",
+            "dataResolucao": "22 de Janeiro 2024",
+            "resposta": "A Sabesp realizou a fiscalização e multou a empresa responsável pelo despejo de esgoto no Rio Tietê."
+        },
+        {
+            "image": "../assets/fotos/supressao_arborea.jpg",
+            "dataResolucao": "01 de Janeiro 2024",
+            "resposta": "Prefeitura Municipal suspende obra que desrespeitou limite mínimo de construção próximo à nascente."
+        },
+        {
+            "image": "../assets/fotos/esgoto1.jpg",
+            "dataResolucao": "22 de Janeiro 2023",
+            "resposta": "A Artesp realizou a fiscalização e multou a proprietário responsável pelo despejo de esgoto no Rio Tietê."
+        },
+        {
+            "image": "../assets/fotos/desmatamento.jpg",
+            "dataResolucao": "30 de Janeiro 2023",
+            "resposta": "A Agência Nnacional de Águas realizou a fiscalização e multou a proprietário responsável pelo desmatamento em nascente"
+        }
+    ]
+}
