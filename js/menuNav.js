@@ -2,8 +2,6 @@ console.log("nav menu");
 const menu = document.querySelectorAll(".menu_nav>li");
 
 
-
-
 const currentPageURL = window.location.href;
 
 console.log(currentPageURL)
