@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="../template/template.css">
     <script src="/js/lastNews.js" defer></script>
     <script src="/js/menuNav.js" defer></script>
+    <script src="/js/loginRegistro.js" defer></script>
 
     <link rel="icon" type="image/png" sizes="192x192"
         href="../assets/../assets/img/favicon_io/android-chrome-192x192.png">
@@ -75,7 +76,7 @@
                     <div class="sidebar_text_title">Últimas notícias</div>
                 </div>
                 <div class="ultimas_denuncias">
-                    <!-- <div class="ud_titulo">
+                    l <!-- <div class="ud_titulo">
                         <a href="#">
                             Esgoto clandestino despejado no rio Tiete
                         </a>
@@ -107,7 +108,7 @@
             <main>
 
                 <section class="container">
-                    <div class="container-login">
+                    <div class="container-login" id="loginForm">
 
                         <div class="header-login">
                             <h2>Login</h2>
@@ -124,12 +125,17 @@
                                     <input type="checkbox" name="remember" id="remember">
                                     <label for="remember">Lembre-me</label><br>
                                 </span>
+                                <span>
+                                    <p> Não tem uma Conta
+                                    <div class="registre"> <a href="#">Registre-se</a></div>
+                                    </p>
+                                </span>
                                 <input type="submit" value="Entrar">
                             </form>
                             <a href="#">Esqueci minha senha</a>
                         </div>
                     </div> <!--fim login-->
-                    <div class="cadastro">
+                    <div class="cadastro" id="cadastro">
                         <div class="header-cadastro">
                             <h2>Cadastro</h2>
                             <hr class="hr">
@@ -143,9 +149,15 @@
                                     minlength="6" required><br>
                                 <input type="password" name="confirme-senha" id="confirme-senha"
                                     placeholder="Confirme senha" minlength="6" required><br>
+                                <span>
+                                    <p> Já tem uma conta
+                                    <div class="entre"><a href="#">Entre</a></div>
+                                    </p>
+                                </span>
                                 <input type="submit" value="Cadastrar">
 
                             </form>
+
                         </div>
                     </div> <!--fim cadastro-->
 
