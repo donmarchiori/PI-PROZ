@@ -8,22 +8,21 @@ menu.forEach(estiloMenu)
 
 function estiloMenu(menuItem, i) {
 
-    let a = window.location.href;
+    let url = window.location.href;
+    const removerHashEParametros = a => url.replace(/#/g, '').split('?')[0]; //arow function para treinar
+    const a = removerHashEParametros(url)
     const b = menuItem.querySelector('a');
-    a = a.replace(/#/g, '');
 
 
-    // Criar um novo URL com o caminho relativo b e o mesmo domínio e protocolo que o URL a
+    // criar nova url como nome ralativo
     const urlB = new URL(b, a);
 
-    // Verificar se os URLs são iguais
     if (saoIguais = a === urlB.href) {
 
         menu[i].id = 'selecionado';;
     }
 
 }
-
 
 
 
