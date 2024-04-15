@@ -8,6 +8,7 @@
     <script src="/js/lastNews.js" defer></script>
     <script src="/js/menuNav.js" defer></script>
     <script src="/js/loginRegistro.js" defer></script>
+    <script src="/js/cadastro.js"></script>
 
     <link rel="icon" type="image/png" sizes="192x192"
         href="../assets/../assets/img/favicon_io/android-chrome-192x192.png">
@@ -144,11 +145,16 @@
                             <form action="#">
                                 <input type="text" id="nome" placeholder="Nome" required><br>
                                 <input type="email" name="email-cadastro" id="email-cadastro" placeholder="E-mail"
-                                    required><br>
+                                    required>
+                                <p id="email-error-message" style="display: none; color: red; font-size: 0.8em;">O email deve conter "@" e ".com"</p>
+                                    <br>
                                 <input type="password" name="senha-cadastro" id="senha-cadastro" placeholder="Senha"
-                                    minlength="6" required><br>
+                                    minlength="8" required><br>
+                                    <p id="senha-error-message" style="display: none; color: red; font-size: 0.8em;">Minimo de 8 caracteres.<br> As senhas nao conferem"</p>
+                                    <br>
                                 <input type="password" name="confirme-senha" id="confirme-senha"
-                                    placeholder="Confirme senha" minlength="6" required><br>
+                                    placeholder="Confirme senha" minlength="8" required><br>
+                                    
                                 <span>
                                     <p> Já tem uma conta
                                     <div class="entre"><a href="#">Entre</a></div>

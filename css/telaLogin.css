@@ -127,3 +127,13 @@ input[type="checkbox"] {
   color: #0b6b91;
   text-decoration: underline;
 }
+
+.error{
+  outline-color: #fd000070 !important;
+  background-color: #ff000023;
+}
+
+.correct{
+  outline-color: rgba(11, 156, 11, 0.37) !important;
+  background-color: rgba(0, 128, 0, 0.219);
+}
