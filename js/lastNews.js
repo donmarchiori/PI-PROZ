@@ -20,7 +20,7 @@ async function buscaNoticias() {
         )
         ultimasNoticias.innerHTML = mapped.join("")
     }
-    catch (error){
+    catch (error) {
         console.error("Erro ao buscar dados:", error);
     };
 }
