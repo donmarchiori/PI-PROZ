@@ -70,10 +70,14 @@
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
+  
+}
+.form-cadastro {
+  padding-top: 10px;
 }
 
 .form-cadastro {
-  height: 310px !important;
+  height: 360px !important;
 }
 
 .form-login input,
